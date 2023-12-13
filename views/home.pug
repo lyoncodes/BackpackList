@@ -1,0 +1,5 @@
+a(href=`/user/${user.id}`)= user.username
+ul
+  each trip in trips
+    li
+      a(href=`trip/${trip.id}`)= trip.title

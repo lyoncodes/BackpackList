@@ -1,0 +1,10 @@
+h1 #{user.username}
+h1 Trips
+ul
+  each trip in user.trips
+    a(href=`../trip/${trip}`)= trip
+h1 Add Items
+form(action=`/createItem` method="POST")
+  input(type="text" id="name" value="" name="name")
+  input(type="number" id="weight" value="Weight" name="weight")
+  button(type="submit") add item
